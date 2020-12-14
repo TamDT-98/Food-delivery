@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
 }
 
 * {
@@ -11,8 +12,6 @@ body {
   margin: 0;
   height: 100vh;
   width: 100%;
-  font-family: "Montserrat", sans-serif;
-  overflow: hidden;
 }
 
 /* -------- Modal ------- */
@@ -38,6 +37,7 @@ body {
   border: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  font-size: 1.4rem;
 }
 
 #modal {
@@ -47,12 +47,12 @@ body {
   background-color: #fffafa;
   font-size: 1.6rem;
   display: flex;
-  margin: auto;
   font-weight: 600;
   border: 1px solid #000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transform: translateY(120%);
+  transform: translateY(200%);
   transition: transform linear 0.2s;
+  margin: auto;
 }
 
 .btn.btn--login {
@@ -62,12 +62,16 @@ body {
 }
 
 #modal input {
-  width: 31.7rem;
+  width: 34rem;
   height: 4rem;
   border: 1px solid #000;
   border-radius: 1rem;
   outline: none;
   font-weight: 600;
+}
+
+#modal input:hover {
+  border: 1px solid #fa8519;
 }
 
 #modal label {
@@ -90,7 +94,7 @@ body {
 }
 
 .modal-login--form__username {
-  margin-bottom: 5.5rem;
+  margin-bottom: 4.5rem;
 }
 
 .modal-login__hide {
@@ -110,13 +114,26 @@ body {
   flex-direction: column;
 }
 
+.modal-register--form > .form-group:not(:first-child) {
+  padding-top: 4.5rem;
+}
+
 .btn.btn--register {
-  margin-bottom: 3rem;
+  margin-top: 3rem;
   align-self: center;
 }
 
 .modal-register--form > input {
   margin-bottom: 5.5rem;
+}
+
+.form-message {
+  color: red;
+  font-weight: 200;
+}
+
+.invalid input {
+  border: 1px solid red !important;
 }
 
 @keyframes shaDownElement {
@@ -161,4 +178,34 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+header .logo img {
+  position: absolute;
+  left: 8.13%;
+  right: 8.13%;
+  top: 0%;
+  bottom: 0%;
+  padding: 26px 0;
+  width: 70%;
+}
+
+header .nav-bar {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 66px;
+  position: absolute;
+  right: 56px;
+}
+
+header .nav-bar ul li {
+  padding: 30px 60px;
+}
+
+header .nav-bar ul li a {
+  color: #fa4a0c, 100% !important;
+  width: 100%;
+  overflow: hidden;
 }
