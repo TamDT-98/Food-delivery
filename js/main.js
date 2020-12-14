@@ -8,6 +8,8 @@ function toogleModal() {
   const btn = document.getElementById("test");
   const modal = document.getElementById("modal");
   const overlay = document.querySelector(".over-lay");
+  const clickModal = document.querySelector(".modal-login__hide");
+
 
   btn.addEventListener("click", function (event) {
     event.preventDefault();
@@ -19,6 +21,7 @@ function toogleModal() {
     overlay.style.animation = "overlay 1s 1";
   });
 
+  function hideModal() {
   overlay.addEventListener("click", function () {
     modal.style.transform = "translateY(-120%)";
     overlay.style.display = "none";
@@ -27,5 +30,7 @@ function toogleModal() {
       modal.style.opacity = 0;
       modal.style.transform = "translateY(120%)";
     }, 100);
+  overlay.addEventListener("click", hideModal);
+  clickModal.addEventListener("click", hideModal);
   });
 }
