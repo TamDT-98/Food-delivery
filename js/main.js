@@ -30,6 +30,7 @@ function toogleModal() {
     }, 100);
   }
 
+  //Toggle modal
   overlay.addEventListener("click", hideModal);
   clickModal.addEventListener("click", hideModal);
 }
