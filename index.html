@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <button id="test">Test modal</button>
+    <div class="over-lay"></div>
+    <div class="modal" id="modal">
+      <div class="modal-login">
+        <form class="modal-login--form">
+          <label for="user-name">Username</label>
+          <input
+            type="text"
+            class="modal-login--form__username"
+            id="user-name"
+          />
+          <label for="pass-word">Password</label>
+          <input
+            type="password"
+            id="pass-word"
+            class="modal-login--form__password"
+          />
+          <button class="btn btn--primary btn--login">LOGIN</button>
+        </form>
+        <p class="modal-login__hide">Click out to hide modal</p>
+      </div>
+      <div class="modal-register">
+        <form class="modal-register--form">
+          <label for="register-username">Username</label>
+          <input
+            type="text"
+            class="modal-register--form__username"
+            id="register-username"
+          />
+          <label for="register-password">Password</label>
+          <input
+            type="password"
+            class="modal-register--form__password"
+            id="register-password"
+          />
+          <label for="register-confirm">Confirm password</label>
+          <input
+            type="password"
+            class="modal-register--form__confirm"
+            id="register-confirm"
+          />
+          <label for="register-phone">Phone</label>
+          <input
+            type="text"
+            class="modal-register--form__phone"
+            id="register-phone"
+          />
+          <label for="address">Address</label>
+          <input
+            type="text"
+            class="modal-register--form__address"
+            id="register-address"
+          />
+          <button class="btn btn--primary btn--register">REGISTER</button>
+        </form>
+      </div>
+    </div>
+
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
