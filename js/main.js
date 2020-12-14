@@ -20,14 +20,15 @@ function toogleModal() {
     overlay.style.animation = "overlay 1s 1";
   });
 
+  
   function hideModal() {
-    modal.style.transform = "translateY(-120%)";
-    overlay.style.display = "none";
+      modal.style.transform = "translateY(-120%)";
+      overlay.style.display = "none";
 
-    setTimeout(function () {
-      modal.style.opacity = 0;
-      modal.style.transform = "translateY(120%)";
-    }, 100);
+      setTimeout(function () {
+        modal.style.opacity = 0;
+        modal.style.transform = "translateY(120%)" 
+      }, 100)
   }
 
   overlay.addEventListener("click", hideModal);

@@ -12,35 +12,7 @@ body {
   margin: 0;
   height: 100vh;
   width: 100%;
-}
-
-header .logo img {
-  position: absolute;
-  left: 8.13%;
-  right: 8.13%;
-  top: 0%;
-  bottom: 0%;
-  padding: 26px 0;
-  width: 70%;
-}
-
-header .nav-bar {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 66px;
-  position: absolute;
-  right: 56px;
-}
-
-header .nav-bar ul li {
-  padding: 30px 60px;
-}
-
-header .nav-bar ul li a {
-  color: #fa4a0c, 100% !important;
-  width: 100%;
+  font-family: "Montserrat", sans-serif;
   overflow: hidden;
 }
 
@@ -190,4 +162,34 @@ header .nav-bar ul li a {
   100% {
     opacity: 1;
   }
+}
+
+header .logo img {
+  position: absolute;
+  left: 8.13%;
+  right: 8.13%;
+  top: 0%;
+  bottom: 0%;
+  padding: 26px 0;
+  width: 70%;
+}
+
+header .nav-bar {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 66px;
+  position: absolute;
+  right: 56px;
+}
+
+header .nav-bar ul li {
+  padding: 30px 60px;
+}
+
+header .nav-bar ul li a {
+  color: #fa4a0c, 100% !important;
+  width: 100%;
+  overflow: hidden;
 }
