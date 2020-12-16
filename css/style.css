@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
 }
 
 * {
@@ -11,4 +12,182 @@ body {
   margin: 0;
   height: 100vh;
   width: 100%;
+}
+
+header .logo img {
+  position: absolute;
+  left: 8.13%;
+  right: 8.13%;
+  top: 0%;
+  bottom: 0%;
+  padding: 26px 0;
+  width: 70%;
+}
+
+header .nav-bar {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 66px;
+  position: absolute;
+  right: 56px;
+}
+
+header .nav-bar ul li {
+  padding: 30px 60px;
+}
+
+header .nav-bar ul li a {
+  color: #fa4a0c, 100% !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* -------- Modal ------- */
+
+.over-lay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.btn {
+  width: 13.2rem;
+  height: 4rem;
+  background-color: #fa8519;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+#modal {
+  width: 75.7rem;
+  height: auto;
+  border-radius: 1rem;
+  background-color: #fffafa;
+  font-size: 1.6rem;
+  display: flex;
+  margin: auto;
+  font-weight: 600;
+  border: 1px solid #000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateY(200%);
+  transition: transform linear 0.2s;
+}
+
+.btn.btn--login {
+  margin: auto;
+  margin-top: 7.2rem;
+  margin-bottom: 28.9rem;
+}
+
+#modal input {
+  width: 31.7rem;
+  height: 4rem;
+  border: 1px solid #000;
+  border-radius: 1rem;
+  outline: none;
+  font-weight: 600;
+}
+
+#modal label {
+  display: block;
+  padding-bottom: 0.6rem;
+}
+
+.modal-login {
+  width: 50%;
+  border-right: 1px solid #000;
+}
+
+.modal-login--form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 2.2rem;
+  padding-left: 1.8rem;
+}
+
+.modal-login--form__username {
+  margin-bottom: 5.5rem;
+}
+
+.modal-login__hide {
+  cursor: pointer;
+  padding-left: 1.8rem;
+  margin-top: 5rem;
+}
+
+.modal-register {
+  width: 50%;
+}
+
+.modal-register--form {
+  padding-top: 2.2rem;
+  padding-left: 1.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn.btn--register {
+  margin-bottom: 3rem;
+  align-self: center;
+}
+
+.modal-register--form > input {
+  margin-bottom: 5.5rem;
+}
+
+@keyframes shaDownElement {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opcity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes overlay {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opcity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
