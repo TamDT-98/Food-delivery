@@ -22,15 +22,15 @@ function toogleModal() {
   });
 
   function hideModal() {
-  overlay.addEventListener("click", function () {
-    modal.style.transform = "translateY(-120%)";
-    overlay.style.display = "none";
+      modal.style.transform = "translateY(-120%)";
+      overlay.style.display = "none";
 
-    setTimeout(function () {
-      modal.style.opacity = 0;
-      modal.style.transform = "translateY(120%)";
-    }, 100);
+      setTimeout(function () {
+        modal.style.opacity = 0;
+        modal.style.transform = "translateY(120%)" 
+      }, 100)
+  }
+
   overlay.addEventListener("click", hideModal);
   clickModal.addEventListener("click", hideModal);
-  });
 }
