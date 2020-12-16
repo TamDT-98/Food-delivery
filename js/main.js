@@ -10,6 +10,7 @@ function toogleModal() {
   const overlay = document.querySelector(".over-lay");
   const clickModal = document.querySelector(".modal-login__hide");
 
+
   btn.addEventListener("click", function (event) {
     event.preventDefault();
 
@@ -20,7 +21,6 @@ function toogleModal() {
     overlay.style.animation = "overlay 1s 1";
   });
 
-  
   function hideModal() {
       modal.style.transform = "translateY(-120%)";
       overlay.style.display = "none";
