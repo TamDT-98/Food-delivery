@@ -1,193 +1,296 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food delivery</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Food delivery</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,400;1,500&display=swap"
-    rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <div class="container-fluid">
-    <header>
-      <div class="row">
-        <!-- logo -->
-        <div class="logo col-sm-2 offset-sm-1">
-          <a href="#!"><img src="img/logo.png" alt="logo"></a>
-        </div>
-        <!-- nav bar -->
-        <div class="nav-bar ">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-              data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#!">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#!" id="test">Login/Register <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#!">Dark mode <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#!">Logout <span class="sr-only">(current)</span></a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-  </div>
-
-  <div class="main-header">
-    <div class="main-header__overlay">
-      <div class="main-header__content">
-        <h1>Food app</h1>
-        <p>Why stay hungry when </p>
-        <p>can order form Bella Onojie</p>
-        <p>Download the bella onoje’s food app now on</p>
-        <a href="#!" class="play-store">Play store</a>
-        <a href="#!">App Store</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-img">
-    <div class="container-img--left">
-      <img src="./img/container-img-left.png" alt="" class="container-img--left__img">
-    </div>
-    <div class="container-img--right">
-      <img src="./img/container-img-right.png" alt="" class="container-img--right__img">
-    </div>
-  </div>
-  <span class="container-hr"></span>
-
-  <section class="section-content">
-    <main>
-      <h1>How the app works</h1>
-      <div class="first-content">
-        <div class="img-content">
-          <img src="img/1.png" alt="">
-        </div>
-        <div class="first-content__one">
-          <h3>Create an account</h3>
-          <h2>Create/login to an existing
-            account to get started</h2>
-          <h4>An account is created with your email
-            and a desired password</h4>
-        </div>
-      </div>
-
-      <div class="second-content">
-        <div class="second-content__second">
-          <h3>Explore varieties</h3>
-          <h2>Shop for your favorites
-            meal as e dey hot.</h2>
-          <h4>Shop for your favorite meals or drinks
-            and enjoy while doing it.</h4>
-        </div>
-        <div class="second-content__img">
-          <img src="img/2.png" alt="">
-        </div>
-      </div>
-
-      <div class="three-content">
-        <div class="three-content__img">
-          <img src="img/3.png" alt="">
-        </div>
-        <div class="three-content__three">
-          <h3>Checkout</h3>
-          <h2>
-            When you done check out
-            and get it delivered.
-          </h2>
-          <h4>When you done check out and get it
-            delivered with ease.</h4>
-        </div>
-      </div>
-    </main>
-
-    <main>
-        <div class="main-footer">
-          <div class="main-footer__overlay">
-          <div class="main-footer__content">
-            <h2>Download the app now.</h2>
-           <h4>Available on your favorite store. Start your premium experience now</h4>
-            <a href="#!" class="play-store">Play store</a>
-            <a href="#!">App Store</a>
+  <body>
+    <div class="container-fluid">
+      <header>
+        <div class="row">
+          <!-- logo -->
+          <div class="logo col-sm-2 offset-sm-1">
+            <a href="#!"><img src="img/logo.png" alt="logo" /></a>
+          </div>
+          <!-- nav bar -->
+          <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <button
+                class="navbar-toggler navbar-toggler-right"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#!"
+                      >Home <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#!" id="test"
+                      >Login/Register <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#!"
+                      >Dark mode <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#!"
+                      >Logout <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
         </div>
+      </header>
+    </div>
+
+    <div class="main-header">
+      <div class="main-header__overlay">
+        <div class="main-header__content">
+          <h1>Food app</h1>
+          <p>Why stay hungry when</p>
+          <p>can order form Bella Onojie</p>
+          <p>Download the bella onoje’s food app now on</p>
+          <a href="#!" class="play-store">Play store</a>
+          <a href="#!">App Store</a>
         </div>
-    </main>
-  </section>
-
-  <footer class="footer-content">
-    <div class="logo ">
-      <a href="#!"><img src="img/logo.png" alt="logo"></a>
-    </div>
-      <div class="footer-contact">
-        <a href="#!"><img src="img/twich.png" alt=""></a>
-        <a href="#!"><img src="img/facebook.png" alt=""></a>
-        <a href="#!"><img src="img/instagram.png" alt=""></a>
       </div>
-    <div class="copyright">
-      <p>Copywright 2020 Bella Onojie.com</p>
     </div>
-  </footer>
 
-  <div class="over-lay"></div>
-  <div class="modall" id="modal">
-    <div class="modal-login">
-      <form class="modal-login--form">
-        <label for="user-name">Username</label>
-        <input type="text" class="modal-login--form__username" id="user-name" />
-        <label for="pass-word">Password</label>
-        <input type="password" id="pass-word" class="modal-login--form__password" />
-        <button class="btn btn--primary btn--login">LOGIN</button>
-      </form>
-      <p class="modal-login__hide">Click out to hide modal</p>
+    <div class="container-img">
+      <div class="container-img--left">
+        <img
+          src="./img/container-img-left.png"
+          alt=""
+          class="container-img--left__img"
+        />
+      </div>
+      <div class="container-img--right">
+        <img
+          src="./img/container-img-right.png"
+          alt=""
+          class="container-img--right__img"
+        />
+      </div>
     </div>
-    <div class="modal-register">
-      <form class="modal-register--form">
-        <label for="register-username">Username</label>
-        <input type="text" class="modal-register--form__username" id="register-username" />
-        <label for="register-password">Password</label>
-        <input type="password" class="modal-register--form__password" id="register-password" />
-        <label for="register-confirm">Confirm password</label>
-        <input type="password" class="modal-register--form__confirm" id="register-confirm" />
-        <label for="register-phone">Phone</label>
-        <input type="text" class="modal-register--form__phone" id="register-phone" />
-        <label for="address">Address</label>
-        <input type="text" class="modal-register--form__address" id="register-address" />
-        <button class="btn btn--primary btn--register">REGISTER</button>
-      </form>
+    <span class="container-hr"></span>
+
+    <section class="section-content">
+      <main>
+        <h1>How the app works</h1>
+        <div class="first-content">
+          <div class="img-content">
+            <img src="img/1.png" alt="" />
+          </div>
+          <div class="first-content__one">
+            <h3>Create an account</h3>
+            <h2>Create/login to an existing account to get started</h2>
+            <h4>
+              An account is created with your email and a desired password
+            </h4>
+          </div>
+        </div>
+
+        <div class="second-content">
+          <div class="second-content__second">
+            <h3>Explore varieties</h3>
+            <h2>Shop for your favorites meal as e dey hot.</h2>
+            <h4>
+              Shop for your favorite meals or drinks and enjoy while doing it.
+            </h4>
+          </div>
+          <div class="second-content__img">
+            <img src="img/2.png" alt="" />
+          </div>
+        </div>
+
+        <div class="three-content">
+          <div class="three-content__img">
+            <img src="img/3.png" alt="" />
+          </div>
+          <div class="three-content__three">
+            <h3>Checkout</h3>
+            <h2>When you done check out and get it delivered.</h2>
+            <h4>When you done check out and get it delivered with ease.</h4>
+          </div>
+        </div>
+      </main>
+
+      <main>
+        <div class="main-footer">
+          <div class="main-footer__overlay">
+            <div class="main-footer__content">
+              <h2>Download the app now.</h2>
+              <h4>
+                Available on your favorite store. Start your premium experience
+                now
+              </h4>
+              <a href="#!" class="play-store">Play store</a>
+              <a href="#!">App Store</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <footer class="footer-content">
+      <div class="logo">
+        <a href="#!"><img src="img/logo.png" alt="logo" /></a>
+      </div>
+      <div class="footer-contact">
+        <a href="#!"><img src="img/twich.png" alt="" /></a>
+        <a href="#!"><img src="img/facebook.png" alt="" /></a>
+        <a href="#!"><img src="img/instagram.png" alt="" /></a>
+      </div>
+      <div class="copyright">
+        <p>Copywright 2020 Bella Onojie.com</p>
+      </div>
+    </footer>
+
+    <div class="over-lay"></div>
+    <div class="modall" id="modal">
+      <div class="modal-login">
+        <form class="modal-login--form">
+          <label for="user-name">Username</label>
+          <input
+            type="text"
+            class="modal-login--form__username"
+            id="user-name"
+          />
+          <label for="pass-word">Password</label>
+          <input
+            type="password"
+            id="pass-word"
+            class="modal-login--form__password"
+          />
+          <button class="btn btn--primary btn--login">LOGIN</button>
+        </form>
+        <p class="modal-login__hide">Click out to hide modal</p>
+      </div>
+      <div class="modal-register">
+        <form class="modal-register--form" id="form-register">
+          <div class="form-group">
+            <label for="register-username">Username</label>
+            <input
+              type="text"
+              class="modal-register--form__username"
+              name="userName"
+              id="register-username"
+            />
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="register-password">Password</label>
+            <input
+              type="password"
+              class="modal-register--form__password"
+              name="password"
+              id="register-password"
+            />
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="register-confirm">Confirm password</label>
+            <input
+              type="password"
+              class="modal-register--form__confirm"
+              name="confirmPassword"
+              id="register-confirm"
+            />
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="register-phone">Phone</label>
+            <input
+              type="text"
+              class="modal-register--form__phone"
+              name="phone"
+              id="register-phone"
+            />
+            <span class="error-message"></span>
+          </div>
+          <div class="from-group">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              class="modal-register--form__address"
+              name="address"
+              id="register-address"
+            />
+            <span class="error-message"></span>
+          </div>
+          <button class="btn btn--primary btn--register">REGISTER</button>
+        </form>
+      </div>
     </div>
-  </div>
 
-  <script src="js/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-</body>
-
+    <script src="js/main.js"></script>
+    <script src="js/validate.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Mong muon cua chung ta
+      Validator({
+        form: "#form-register",
+        errorSelector: ".error-message",
+        rules: [
+          Validator.isRequired("#register-username"),
+          Validator.isRequired("#register-password"),
+          Validator.isRequired("#register-phone"),
+          Validator.isRequired("#register-confirm"),
+          Validator.isUserName("#register-username"),
+          Validator.isPassword("#register-password"),
+          Validator.isPhone("#register-phone"),
+          Validator.isAddress("#register-address"),
+          Validator.isConfirm("#register-confirm", function () {
+            return document.querySelector(
+              "#form-register #register-password"
+            ).value;
+          }),
+        ],
+        onSubmit: function (data) {
+          console.log(data);
+        },
+      });
+    </script>
+  </body>
 </html>
