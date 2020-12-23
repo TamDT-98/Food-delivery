@@ -1,7 +1,7 @@
 // Doi tung Validator
 function Validator(options) {
   let selecterRules = {};
-
+  let arrayUser = [];
   // Ham thuc hien validate
   function validate(inputElement, rule) {
     const errorElement = inputElement.parentElement.querySelector(
@@ -64,8 +64,10 @@ function Validator(options) {
             return (values[input.name] = input.value) && values;
           },
           {});
+          arrayUser.push(formValues);
 
           options.onSubmit(formValues);
+          localStorage.setItem("users", JSON.stringify(arrayUser));
         }
       }
     };
