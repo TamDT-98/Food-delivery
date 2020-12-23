@@ -58,9 +58,7 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#!"
-                      >Logout <span class="sr-only">(current)</span></a
-                    >
+                    <a class="nav-link" id="logout" href="#!"></a>
                   </li>
                 </ul>
               </div>
@@ -189,7 +187,9 @@
             id="pass-word"
             class="modal-login--form__password"
           />
-          <button class="btn btn--primary btn--login">LOGIN</button>
+          <button class="btn btn--primary btn--login" id="btn--login">
+            LOGIN
+          </button>
         </form>
         <p class="modal-login__hide">Click out to hide modal</p>
       </div>
@@ -252,6 +252,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/validate.js"></script>
+    <script src="js/login.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -288,7 +289,7 @@
           }),
         ],
         onSubmit: function (data) {
-          console.log(data);
+          return;
         },
       });
     </script>
